@@ -1,0 +1,17 @@
+.brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .brands {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brands img {
+    margin: 1rem 0;
+  }
+}

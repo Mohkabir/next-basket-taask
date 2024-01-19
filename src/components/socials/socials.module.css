@@ -1,0 +1,36 @@
+.socials {
+  background-color: #fafafa;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.socials > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.socials span {
+  display: flex;
+  align-items: center;
+}
+
+.socials span svg {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .socials > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .socials span {
+    margin: 1rem 0;
+  }
+  .socials span svg {
+    margin-left: 0rem;
+    margin-right: 1rem;
+  }
+}

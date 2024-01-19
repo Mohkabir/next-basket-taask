@@ -1,0 +1,33 @@
+.service_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 3rem 0;
+}
+
+.service {
+  width: 23%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contents h4 {
+  margin: 0.5rem 0;
+}
+
+.contents p {
+  color: #737373;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .service {
+    width: 60%;
+    margin: 2rem auto;
+  }
+
+  .service_wrap {
+    flex-direction: column;
+    margin: 3rem 0;
+  }
+}

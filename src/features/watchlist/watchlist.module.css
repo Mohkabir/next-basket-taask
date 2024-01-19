@@ -1,0 +1,88 @@
+.container {
+  background: "#fafafa";
+  padding: 3rem 0;
+  padding-bottom: 7rem;
+}
+
+.card_wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.total {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.total button {
+  padding: 0.7rem 1.5rem;
+  border: 1px solid #23a6f0;
+  border-radius: 5px;
+  background-color: #23a6f0;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 2rem;
+}
+
+.total button:hover {
+  background-color: #1d8ed0;
+}
+
+.bold {
+  font-weight: 700;
+  color: #000000 !important;
+  margin-right: 0.5rem;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+  .image_wrap {
+    width: 150px;
+    height: 150px;
+  }
+
+  .quantity {
+    margin-bottom: 0.5rem;
+  }
+
+  .quantity input {
+    width: 40px;
+    height: 20px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+
+  .quantity button {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1rem 0;
+    padding-bottom: 0rem;
+  }
+
+  .card_wrap {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,27 @@
+.success {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem auto;
+  margin-top: 4rem;
+  height: 40vh;
+}
+
+.success p {
+  margin: 1rem 0;
+}
+
+.success button {
+  padding: 0.7rem 1.5rem;
+  border: 1px solid #23a6f0;
+  border-radius: 5px;
+  background-color: #23a6f0;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  /* margin-left: 2rem; */
+}

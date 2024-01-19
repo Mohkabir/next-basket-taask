@@ -1,0 +1,85 @@
+.flex {
+  display: flex;
+  padding: 3rem 0;
+}
+
+.card {
+  width: 18%;
+}
+
+.card a {
+  text-decoration: none;
+  color: #737373;
+  display: block;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.get_in_touch {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.get_in_touch input {
+  border: 1px solid #e6e6e6;
+  background-color: #f9f9f9;
+  padding: 1.1rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+}
+
+.get_in_touch button {
+  padding: 1rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #23a6f0;
+  color: #ffffff;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+}
+
+.get_in_touch button:hover {
+  background-color: #1d8ed0;
+}
+
+.get_in_touch span {
+  font-weight: 400;
+  color: #737373;
+  font-size: 12px;
+}
+
+.rights {
+  background-color: #fafafa;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.rights > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  width: 87%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 45%;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+}

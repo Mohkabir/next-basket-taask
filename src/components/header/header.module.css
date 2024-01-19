@@ -1,0 +1,137 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+}
+
+.nav a {
+  text-decoration: none;
+  margin-right: 1rem;
+  color: #737373;
+}
+
+.box_two span a {
+  color: #23a6f0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem auto;
+  /* margin-top: 2rem; */
+  padding: 2rem 0;
+  /* outline: 1px solid red; */
+}
+
+.menu_box {
+  display: none;
+}
+
+.box_two {
+  /* outline: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+
+.box_two span {
+  color: #23a6f0;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-left: 1.3rem;
+}
+
+.box_two span svg {
+  margin-right: 0.4rem;
+}
+
+.menu_open {
+  display: flex;
+}
+.menu_close {
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .header > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .box_one {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+  .box_one a {
+    padding: 0.5rem;
+  }
+  .box_two {
+    display: none;
+  }
+  .menu_box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* width: 150px; */
+  }
+  .menu_box span {
+    margin-left: 0.4rem;
+    /* outline: 1px solid red; */
+    margin-right: 0.5rem;
+  }
+
+  .menu_box button {
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    margin-left: 0.4rem;
+  }
+
+  .menu_box a {
+    text-decoration: none;
+  }
+  .menu_box button svg {
+    width: 20px;
+    height: 35px;
+  }
+
+  .menu_box svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 0.1rem;
+  }
+
+  .menu_open {
+    display: flex;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; */
+  }
+  .menu_close {
+    display: none;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box_two {
+    margin-top: 1rem;
+  }
+} */

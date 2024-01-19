@@ -1,0 +1,65 @@
+.address {
+  background-color: #23856d;
+  color: #ffffff;
+  font-style: normal;
+}
+
+.address h5,
+.address span,
+.address a,
+.address p {
+  color: #ffffff;
+  font-style: normal;
+}
+
+.address span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-top: 1.5rem;
+}
+
+.mail {
+  margin-left: 25px;
+}
+.socials {
+  display: inline-flex;
+  align-items: center;
+}
+
+.socials span {
+  display: flex;
+  align-items: center;
+}
+.socials span svg {
+  margin-left: 10px;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .flex {
+    flex-direction: column;
+  }
+  .mail {
+    margin-left: 0;
+    margin-top: 0rem;
+    margin-bottom: 0.4rem;
+    margin-left: 0.4rem;
+  }
+  .socials {
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .address {
+    display: none;
+  }
+}
