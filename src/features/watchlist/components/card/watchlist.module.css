@@ -67,12 +67,20 @@
 
 @media screen and (max-width: 768px) {
   .product {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     align-items: center;
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
+
+  .contents {
+    padding: 1rem;
+    width: 100%;
+  }
+
   .image_wrap {
-    width: 140px !important;
-    height: 150px;
+    width: 90%;
+    height: auto;
   }
 }

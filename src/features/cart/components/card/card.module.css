@@ -106,9 +106,17 @@
   .product {
     margin-bottom: 0rem;
     align-items: center;
+    display: flex;
+    flex-direction: column;
   }
+
+  .contents {
+    padding: 1rem;
+    width: 100%;
+  }
+
   .image_wrap {
-    width: 150px;
+    width: 90%;
     height: 150px;
   }
 

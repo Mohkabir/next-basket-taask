@@ -71,7 +71,6 @@ const HeroSection = ({
               <Image
                 src={RatingImage}
                 alt="Description of the image"
-                className={styles.image}
                 height={22}
                 width={130}
               />
