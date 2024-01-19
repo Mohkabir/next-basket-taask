@@ -4,13 +4,13 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { toast } from "react-toastify";
 
 const loadInitialStateFromLocalStorage = (): CartState => {
-  // if (typeof window !== "undefined") {
-  //   const storedState = localStorage.getItem("cartState");
-  //   return storedState ? JSON.parse(storedState) : initialState;
-  // }
-  // return { cart: [], totalQuantity: 0, totalAmount: 0 };
-  const storedState = localStorage.getItem("cartState");
-  return storedState ? JSON.parse(storedState) : initialState;
+  if (typeof window !== "undefined") {
+    const storedState = localStorage.getItem("cartState");
+    return storedState ? JSON.parse(storedState) : initialState;
+  }
+  return { cart: [], totalQuantity: 0, totalAmount: 0 };
+  // const storedState = localStorage.getItem("cartState");
+  // return storedState ? JSON.parse(storedState) : initialState;
 };
 
 interface CartItem extends ICart {

@@ -3,14 +3,14 @@ import { IWatchlist } from "@/interface";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const loadInitialStateFromLocalStorage = (): watchlistState => {
-  // if (typeof window !== "undefined") {
-  //   const storedState = localStorage.getItem("watchlistState");
-  //   return storedState ? JSON.parse(storedState) : initialState;
-  // }
-  // return { watchlist: [], totalQuantity: 0 };
+  if (typeof window !== "undefined") {
+    const storedState = localStorage.getItem("watchlistState");
+    return storedState ? JSON.parse(storedState) : initialState;
+  }
+  return { watchlist: [], totalQuantity: 0 };
 
-  const storedState = localStorage.getItem("watchlistState");
-  return storedState ? JSON.parse(storedState) : initialState;
+  // const storedState = localStorage.getItem("watchlistState");
+  // return storedState ? JSON.parse(storedState) : initialState;
 };
 
 interface watchlistState {
