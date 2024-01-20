@@ -86,12 +86,4 @@
     margin-top: 1rem;
     flex-direction: column;
   }
-
-  /* .card_wrap {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin-top: 4rem;
-  } */
 }

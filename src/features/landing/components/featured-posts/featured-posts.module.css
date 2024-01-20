@@ -8,8 +8,6 @@
 .featuredPosts {
   width: 32.5%;
   margin-bottom: 1rem;
-  /* text-align: center; */
-  /* outline: 1px solid red; */
 }
 
 .contents {
@@ -100,13 +98,11 @@
   font-size: 12px;
   display: inline-flex;
   align-items: center;
-  /* outline: 1px solid red; */
   line-height: 16px;
 }
 
 .date_wrap span svg {
   margin-right: 0.3rem;
-  /* outline: 1px solid red; */
   margin-top: -3px;
 }
 
@@ -117,7 +113,6 @@
   margin-top: 8rem;
   margin-bottom: 5rem;
   padding: 1rem;
-  /* outline: 1px solid red; */
 }
 .profile_pic {
   margin-top: 4.5rem;
@@ -126,7 +121,6 @@
 
 .about_us div {
   width: 40%;
-  /* outline: 1px solid blue; */
   text-align: right;
 }
 

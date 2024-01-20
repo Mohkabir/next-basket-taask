@@ -25,7 +25,6 @@ const Header = () => {
   const [searchOpen, setSearchOpen] = useState(false);
 
   const dispatch = useDispatch();
-  console.log(search, "search");
   useEffect(() => {
     const searchProduct = async () => {
       if (search) {

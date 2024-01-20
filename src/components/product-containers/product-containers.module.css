@@ -28,11 +28,9 @@
 }
 
 .image_wrap {
-  /* width: 100%; */
   height: 100%;
   width: 100%;
   height: 238px;
-  /* outline: 1px solid green; */
 }
 
 .image {
@@ -46,7 +44,6 @@
 }
 
 .contents {
-  /* outline: 1px solid red; */
   text-align: center;
   padding: 1rem;
   padding-bottom: 1rem;

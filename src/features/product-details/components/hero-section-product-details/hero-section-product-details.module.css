@@ -91,12 +91,10 @@
 }
 
 .box_two p span:nth-child(1) {
-  /* margin-top: 0.5rem; */
   font-weight: 700;
   color: #737373;
 }
 .box_two p span:nth-child(2) {
-  /* margin-top: 0.5rem; */
   font-weight: 700;
   color: #23a6f0;
 }

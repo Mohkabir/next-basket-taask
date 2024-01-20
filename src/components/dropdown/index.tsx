@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./dropdown.module.css";
 import Link from "next/link";
@@ -23,9 +24,7 @@ const Dropdown: React.FC<DropdownProps> = ({
   const dropdownRef = useRef<HTMLDivElement>(null);
   const dispatch = useDispatch();
   useEffect(() => {
-    const handleClickOutside = (
-      event: React.MouseEvent<Document, MouseEvent>
-    ) => {
+    const handleClickOutside = (event: MouseEvent) => {
       if (
         dropdownRef.current &&
         !dropdownRef.current.contains(event.target as Node)
@@ -41,7 +40,7 @@ const Dropdown: React.FC<DropdownProps> = ({
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [setSearchOpen]);
-  console.log(search, "search");
+
   return (
     <div ref={dropdownRef} className={styles.mobile}>
       {searchOpen && (

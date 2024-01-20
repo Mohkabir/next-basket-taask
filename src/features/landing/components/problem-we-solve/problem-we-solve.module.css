@@ -106,13 +106,10 @@
 
   .overlay > div {
     width: 90%;
-    /* margin: 0 auto; */
   }
 
   .overlay > div p {
     width: 80%;
-    /* margin: 0 auto;
-    margin-bottom: 1.5rem; */
   }
 
   .overlay button {

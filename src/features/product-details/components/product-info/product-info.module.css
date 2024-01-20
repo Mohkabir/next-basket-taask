@@ -19,7 +19,6 @@
 
 .additional_info {
   display: flex;
-  /* outline: 1px solid red; */
 }
 
 .additional_info > div:nth-child(1) {
