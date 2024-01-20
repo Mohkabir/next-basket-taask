@@ -117,7 +117,7 @@
 
   .image_wrap {
     width: 90%;
-    height: 150px;
+    height: auto;
   }
 
   .quantity {

@@ -63,7 +63,7 @@
 
 @media screen and (max-width: 768px) {
   .heroSection {
-    margin-top: 0rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
   }

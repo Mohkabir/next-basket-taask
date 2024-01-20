@@ -24,3 +24,13 @@ export const fetchProductDetails = async (id: string) => {
     toast.error("Something went wrong while fetching products");
   }
 };
+
+export const searchProductDetails = async (search: string) => {
+  try {
+    const response = await fetch(`${baseUrl}/products/search?q=${search}`);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching product:", error);
+  }
+};

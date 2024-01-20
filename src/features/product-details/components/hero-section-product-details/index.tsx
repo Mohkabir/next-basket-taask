@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./hero-section-product-details.module.css";
 import RatingImage from "../../../../assets/images/ratings.png";
 
@@ -25,6 +25,12 @@ const HeroSection = ({
 }) => {
   const dispatch = useDispatch();
 
+  const [currentImage, setCurrentImage] = useState(productDetails?.thumbnail);
+
+  useEffect(() => {
+    setCurrentImage(productDetails?.thumbnail);
+  }, [productDetails]);
+
   return (
     <div className={styles.heroSection}>
       <div className={styles.wrap}>
@@ -39,7 +45,7 @@ const HeroSection = ({
                 <p>Loading...</p>
               ) : (
                 <Image
-                  src={productDetails?.thumbnail}
+                  src={currentImage}
                   alt="Description of the image"
                   className={styles.image}
                   width={500}
@@ -61,12 +67,13 @@ const HeroSection = ({
                       className={styles.image}
                       width={300}
                       height={300}
+                      onClick={() => setCurrentImage(image)}
                     />
                   ))}
             </div>
           </div>
           <div className={styles.box_two}>
-            <h3>Floating Phone</h3>
+            <h3>{productDetails?.category}</h3>
             <div className={styles.reviews}>
               <Image
                 src={RatingImage}
@@ -81,6 +88,9 @@ const HeroSection = ({
               <span>Availability : </span>
               <span>In Stock </span>
             </p>
+            <span className={styles.description}>
+              {productDetails?.description}
+            </span>
             <div className={styles.colors}>
               <div className={styles.color_group}>
                 <div className={styles.color}></div>

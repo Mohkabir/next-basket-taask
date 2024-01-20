@@ -60,6 +60,7 @@ const cartSlice = createSlice({
     removeFromCart: (state, action: PayloadAction<number>) => {
       const cartId = action.payload;
       state.cart = state.cart.filter((cartItem) => cartItem.id !== cartId);
+      state.totalQuantity -= 1;
       state.totalAmount = calculateTotalAmount(state.cart);
       localStorage.setItem("cartState", JSON.stringify(state));
     },

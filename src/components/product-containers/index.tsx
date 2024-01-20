@@ -48,8 +48,7 @@ const ProductContainers: FC<ProductContainersProps> = ({
                   <h4>{product.title}</h4>
                   <p>{product.description}</p>
                   <p className={styles.prices}>
-                    <span>${product.discountPercentage}</span>
-                    {""}
+                    <span>${product.discountPercentage}</span>{" "}
                     <span>${product.price}</span>
                   </p>
                 </div>
